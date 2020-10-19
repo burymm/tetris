@@ -1,0 +1,33 @@
+:root {
+  --main-bg: #ffccdd;
+  --border-color: #000000;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+
+  .container {
+    background: var(--main-bg);
+    border: 2px solid var(--border-color);
+    width: 400px;
+    height: 700px;
+    max-height: 80vh;
+    position: relative;
+
+    .element {
+      position: absolute;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+
+        .block {
+          display: block;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
